@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #256785;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.publiclibrary.registrationMenuController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="65.0" prefHeight="536.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <TextField fx:id="surnameField" layoutX="106.0" layoutY="63.0" prefHeight="21.0" prefWidth="138.0" promptText="ФАМИЛИЯ" />
+            <Button fx:id="regButton" layoutX="303.0" layoutY="442.0" mnemonicParsing="false" onAction="#switchToSuccessRegistration" prefHeight="43.0" prefWidth="166.0" text="Зарегистрироватьcя" />
+            <TextField fx:id="nameField" layoutX="317.0" layoutY="63.0" prefHeight="21.0" prefWidth="138.0" promptText="ИМЯ" />
+            <TextField fx:id="patronymicField" layoutX="554.0" layoutY="63.0" prefHeight="21.0" prefWidth="138.0" promptText="ОТЧЕСТВО" />
+            <TextField fx:id="emailField" layoutX="106.0" layoutY="128.0" prefHeight="21.0" prefWidth="138.0" promptText="E-MAIL" />
+            <TextField fx:id="phoneField" layoutX="317.0" layoutY="128.0" prefHeight="21.0" prefWidth="138.0" promptText="ТЕЛЕФОН" />
+            <TextField fx:id="passField" layoutX="555.0" layoutY="125.0" prefHeight="21.0" prefWidth="138.0" promptText="ПАРОЛЬ" />
+            <Text layoutX="95.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата рождения" wrappingWidth="91.13671875" />
+            <SplitMenuButton fx:id="daySplitButton" layoutX="205.0" layoutY="235.0" mnemonicParsing="false" text="01">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+            <SplitMenuButton fx:id="monthSplitButton" layoutX="291.0" layoutY="235.0" mnemonicParsing="false" text="01">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+            </SplitMenuButton>
+            <SplitMenuButton fx:id="yearSplitButton" layoutX="372.0" layoutY="234.0" mnemonicParsing="false" text="1999">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+            </SplitMenuButton>
+            <CheckBox fx:id="check" layoutX="70.0" layoutY="298.0" mnemonicParsing="false" text="Я хочу получать новости и актуальные предложения на почту" />
+         </children>
+      </AnchorPane>
+      <Text fill="#fcfafa" layoutX="211.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="РЕГИСТРАЦИЯ УЧЁТНОЙ ЗАПИСИ" wrappingWidth="456.13671875">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

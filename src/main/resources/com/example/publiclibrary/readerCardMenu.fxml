@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #256785;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.publiclibrary.Account">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="65.0" prefHeight="536.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Button layoutX="22.0" layoutY="11.0" mnemonicParsing="false" onAction="#switchToCatalogFromReaderCard" prefHeight="17.0" prefWidth="124.0" text="Каталог" />
+            <Button layoutX="160.0" layoutY="11.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="124.0" text="Читательская карта" />
+            <Button layoutX="263.0" layoutY="89.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="235.0" text="Отправить запрос на редактирование" />
+            <Text layoutX="45.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Батюшков Иван Русланович" />
+            <Text layoutX="263.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15.09.1999" />
+            <Text layoutX="363.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="г.Минск, Партизанский проспект, 128" />
+            <TableView editable="true" fixedCellSize="0.0" layoutX="-2.0" layoutY="159.0" prefHeight="378.0" prefWidth="800.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Дата" />
+                  <TableColumn prefWidth="75.0" text="Срок сдачи" />
+                <TableColumn prefWidth="75.0" sortType="DESCENDING" text="Название книги" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Text fill="#fcfafa" layoutX="229.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЧИТАТЕЛЬСКАЯ КАРТА" wrappingWidth="584.13671875">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #256785;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.publiclibrary.Library">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="65.0" prefHeight="536.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Button layoutX="17.0" layoutY="7.0" mnemonicParsing="false" onAction="#switchToCatalog" prefHeight="17.0" prefWidth="124.0" text="Каталог" />
+            <TextField layoutX="21.0" layoutY="45.0" prefHeight="25.0" prefWidth="178.0" promptText="Введите название книги" />
+            <Text layoutX="42.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ФИЛЬТРЫ ПОИСКА" />
+            <CheckBox layoutX="21.0" layoutY="104.0" mnemonicParsing="false" text="Бестселлеры" />
+            <CheckBox layoutX="21.0" layoutY="129.0" mnemonicParsing="false" text="Детская литература" />
+            <CheckBox layoutX="21.0" layoutY="155.0" mnemonicParsing="false" text="Художественная литература" />
+            <CheckBox layoutX="21.0" layoutY="182.0" mnemonicParsing="false" text="Нехудожественная литература" />
+            <TextField layoutX="21.0" layoutY="315.0" prefHeight="25.0" prefWidth="178.0" promptText="Введите фамилию автора" />
+            <Text layoutX="66.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="АВТОРЫ" />
+            <CheckBox layoutX="21.0" layoutY="236.0" mnemonicParsing="false" text="Фёдор Достоевский" />
+            <CheckBox layoutX="21.0" layoutY="260.0" mnemonicParsing="false" text="Иван Тургенев" />
+            <CheckBox layoutX="21.0" layoutY="286.0" mnemonicParsing="false" text="Михаил Лермонтов" />
+            <CheckBox layoutX="21.0" layoutY="358.0" mnemonicParsing="false" text="В наличии" />
+            <CheckBox layoutX="21.0" layoutY="385.0" mnemonicParsing="false" text="Под заказ" />
+            <Button layoutX="296.0" layoutY="434.0" mnemonicParsing="false" onAction="#switchToBookView" prefHeight="35.0" prefWidth="190.0" text="Показать результаты поиска" />
+            <Button layoutX="164.0" layoutY="7.0" mnemonicParsing="false" onAction="#switchToReaderCardFromCatalog" prefHeight="17.0" prefWidth="124.0" text="Читательская карта" />
+         </children>
+      </AnchorPane>
+      <Text fill="#fcfafa" layoutX="310.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КАТАЛОГ" wrappingWidth="584.13671875">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

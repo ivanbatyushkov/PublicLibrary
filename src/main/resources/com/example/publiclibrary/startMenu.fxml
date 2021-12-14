@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #256785;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.publiclibrary.startMenuController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="65.0" prefHeight="536.0" prefWidth="800.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <TextField fx:id="loginField" layoutX="238.0" layoutY="90.0" prefHeight="28.0" prefWidth="328.0" promptText="ПОЧТА/НОМЕР ТЕЛЕФОНА" />
+            <TextField fx:id="passField" layoutX="238.0" layoutY="151.0" prefHeight="28.0" prefWidth="328.0" promptText="ПАРОЛЬ" />
+            <Button fx:id="authButton" layoutX="344.0" layoutY="212.0" mnemonicParsing="false" onAction="#switchToCatalog" prefHeight="35.0" prefWidth="84.0" text="ВОЙТИ" />
+            <Button fx:id="regButton" layoutX="303.0" layoutY="439.0" mnemonicParsing="false" onAction="#switchToRegistration" prefHeight="43.0" prefWidth="166.0" text="Зарегистрироватьcя" />
+         </children>
+      </AnchorPane>
+      <Text fill="#fcfafa" layoutX="211.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВОЙДИТЕ В УЧЁТНУЮ ЗАПИСЬ" wrappingWidth="456.13671875">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
